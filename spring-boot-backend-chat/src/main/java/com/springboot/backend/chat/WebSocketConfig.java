@@ -19,7 +19,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 	@Override
 	public void configureMessageBroker(MessageBrokerRegistry registry) {
-		registry.enableStompBrokerRelay("/chat/");
+		registry.enableSimpleBroker("/chat/");
 		registry.setApplicationDestinationPrefixes("/app");
 	}
 	
